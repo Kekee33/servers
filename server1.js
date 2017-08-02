@@ -2,26 +2,25 @@ var http = require('http');
 
 var PORT = 7000;
 
-function handleRequest(req, res){    
-    res.end("You are beautiful!! Path hit: " + req.url);
+function handleRequest(req, res){
+    res.end("You look beautiful today!! Path hit: " + req.url);
 }
 
 var server = http.createServer(handleRequest);
 
 server.listen(PORT, function(){
-    console.log("listening on: http://localhost:", PORT);
+    console.log("listening on: http://localhost:&s", PORT);
 });
 
-var http = require('http');
 
-var PORT = 7500;
+var PORT2 = 7500;
 
-function handleRequest(req, res){    
-    res.end("You left the house wearing that?? Path hit: " + req.url);
+function handleRequest2(req, res){
+    res.end("I can't believe you wore that out of the house!! Path hit: " + req.url);
 }
 
-var server = http.createServer(handleRequest);
+var server2 = http.createServer(handleRequest2);
 
-server.listen(PORT, function(){
-    console.log("listening on: http://localhost:", PORT);
+server2.listen(PORT2, function(){
+    console.log("listening on: http://localhost:&s", PORT2);
 });
